@@ -1,0 +1,38 @@
+#ExperiencePage{
+  text-align: center;
+  min-height:100vh;
+  background-color: rgb(245,245,245);
+}
+
+#ExperienceTitle{
+  padding-top:3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* text rotate effect */
+.textRotate span {
+  display: inline-block;
+  transition: 0.8s;
+}
+
+.textRotate:hover span:nth-child(odd) {
+  transform: rotateX( 0deg ) rotateY( 0deg ) rotateZ( 370deg );
+  cursor: pointer;
+}
+
+.textRotate:hover span:nth-child(even) {
+  transform: rotateX( 0deg ) rotateY( 0deg ) rotateZ( -370deg );
+  cursor: pointer;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}

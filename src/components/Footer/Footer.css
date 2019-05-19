@@ -1,0 +1,62 @@
+#footer{
+  text-align: center;
+  min-height:30vh;
+  background-color: rgb(27, 36, 46);
+  margin-top:0;
+  margin-bottom:0;
+}
+
+#ContactRow{
+  padding-left:30%;
+  padding-top:5%;
+  padding-right:30%;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.socialIcon {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
+  opacity:0.7;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.socialIcon:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  opacity:0.9;
+}
+
+#copyright{
+  size:0.1rem;
+  color:white;
+  font-family:'Montserrat', sans-serif;
+}
+
+#copyrightRow{
+  padding-top:2%;
+}

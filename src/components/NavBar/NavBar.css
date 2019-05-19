@@ -1,0 +1,9 @@
+.navBar{
+  opacity:0.5;
+  font-family: "Roboto",sans-serif;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.navBar:hover{
+  opacity:1;
+}

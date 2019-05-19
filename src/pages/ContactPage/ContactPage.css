@@ -1,0 +1,122 @@
+.ContactPage {
+  text-align: center;
+  min-height:100vh;
+  background-color: rgb(37, 41, 51);
+}
+
+
+#ContactTitle{
+  padding-top:60px;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* text rotate effect */
+.textRotate span {
+  display: inline-block;
+  transition: 0.8s;
+}
+
+.textRotate:hover span:nth-child(odd) {
+  transform: rotateX( 0deg ) rotateY( 0deg ) rotateZ( 370deg );
+  cursor: pointer;
+}
+
+.textRotate:hover span:nth-child(even) {
+  transform: rotateX( 0deg ) rotateY( 0deg ) rotateZ( -370deg );
+  cursor: pointer;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+.DownTri{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+}
+
+#triangleParent{
+  position: relative;
+}
+
+#triangle {
+  border-top: 60px solid white;
+ border-left: 50vw solid transparent;
+ border-right: 50vw solid transparent;
+ width: 0;
+ height: 0;
+ bottom: -40px;
+ content: "";
+ display: block;
+ position: absolute;
+ overflow: hidden;
+ left: 0;
+ right: 0;
+ margin: auto;
+}
+
+.ContactFormInput{
+  background-color:rgb(29,35,43)
+}
+
+#writeMeLetter{
+  color: rgb(224,34,110);
+  font-size:1rem;
+  margin-top:5%;
+}
+
+#emailDelivered{
+  color:rgb(33,192,198);
+  font-size:1rem;
+  margin-top:5%;
+}
+
+
+#ContactForm{
+  margin-top:5%;
+}
+
+
+.ContactFormInput:focus,.ContactFormInput:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+
+#submitButton{
+  color:white;
+  background-color:rgb(0,0,0,0)
+}
+
+#submitButton:hover{
+  background-color:rgb(224,34,110)
+}
+
+
+#Surface,
+#ContactParticles {
+  width: 100%;
+  position: absolute;
+}
+
+#Surface{
+  z-index:2;
+}
+
+.errorMsg{
+color:red;
+font-size:0.8rem;
+text-align: left;
+}

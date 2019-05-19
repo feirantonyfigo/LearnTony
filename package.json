@@ -1,0 +1,50 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
+    "emailjs-com": "^2.3.2",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "popper.js": "^1.15.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-coverflow": "^0.2.20",
+    "react-dom": "^16.8.6",
+    "react-life-timeline": "^1.0.11",
+    "react-native": "^0.59.8",
+    "react-particles-js": "^2.6.0",
+    "react-scripts": "3.0.1",
+    "react-skillbars": "^1.5.1",
+    "react-sticky": "^6.0.3",
+    "reactjs-popup": "^1.4.0",
+    "reactstrap": "^8.0.0",
+    "recharts": "^1.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

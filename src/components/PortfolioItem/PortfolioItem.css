@@ -1,0 +1,54 @@
+#PortfolioItem img{
+  max-width: 90%;
+}
+
+#PortfolioItem-base{
+  position: relative;
+}
+
+#PortfolioItem-mask{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition: opacity 0.7s ease-in-out;
+  opacity:0;
+}
+
+#PortfolioItem-mask:hover{
+opacity: 0.9;
+}
+
+
+#outer-mask{
+  position:relative;
+}
+#text-mask{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:2;
+}
+
+#project-name{
+  font-family:'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top:15%;
+  font-size:1.3rem;
+}
+
+#project-description{
+  font-family: "Roboto",sans-serif;
+  padding-left: 10%;
+  padding-right:10%;
+  font-weight: light;
+  font-size:1rem;
+}
+
+#learn-more-button{
+  font-family: "Montserrat",sans-serif;
+  font-size:1rem;
+}

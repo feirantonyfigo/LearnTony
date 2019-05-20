@@ -37,7 +37,33 @@ opacity: 0.9;
   font-family:'Montserrat', sans-serif;
   font-weight: bold;
   margin-top:15%;
-  font-size:1.3rem;
+}
+
+@media (max-width:600px) {
+  #project-name {
+    font-size: 0.7rem;
+  }
+  #project-description{
+    font-size:0.4rem;
+  }
+}
+@media (max-width:800px) {
+  #project-name {
+    font-size: 1rem;
+  }
+  #project-description{
+    font-size:0.7rem;
+  }
+}
+
+@media (min-width:1000px) {
+  #project-name  {
+    /* Never get larger than this */
+    font-size: 1.3rem;
+  }
+  #project-description{
+    font-size:1rem;
+  }
 }
 
 #project-description{
@@ -45,7 +71,6 @@ opacity: 0.9;
   padding-left: 10%;
   padding-right:10%;
   font-weight: light;
-  font-size:1rem;
 }
 
 #learn-more-button{

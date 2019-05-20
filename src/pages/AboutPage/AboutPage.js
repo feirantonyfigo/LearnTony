@@ -58,8 +58,8 @@ class AboutPage extends React.Component {
       <Col><h1 id="aboutText" className="floating textRotate"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></h1></Col>
       </Row>
       <Row id="IntroductionRow">
-      <Col><Slide left><img src={require('../../assets/image/selfie.gif')} alt="selfie" id="selfie" /></Slide> </Col>
-      <Col>
+      <Col xs={12} md={6}><Slide left><img src={require('../../assets/image/selfie.gif')} alt="selfie" id="selfie" /></Slide> </Col>
+      <Col xs={12} md={6}>
       <div id="selfIntro">
       <Slide right>
       <div id="quote"><blockquote><p className="quotation">
@@ -82,15 +82,10 @@ class AboutPage extends React.Component {
       <Col> </Col>
       <Col>  </Col>
       </Row>
-      <Row id="StrengthRowText">
-      <Col><span id="strengthTab"> Front End </span></Col>
-      <Col> <span id="strengthTab">Back End</span> </Col>
-      <Col> <span id="strengthTab">Programming Languages</span> </Col>
-      </Row>
       <Row id="StrengthCharts">
-      <Col><SkillChart skills={frontEndSkills}  colors={frontEndColor} animationDuration={1000}/></Col>
-      <Col><SkillChart skills={backEndSkills}  colors={{}} animationDuration={1000}/></Col>
-      <Col><SkillChart skills={programmingLanguageSkills}  colors={programmingLanguageColor} animationDuration={1000} /></Col>
+      <Col xs={12} md={4}><span id="strengthTab"> Front End </span><SkillChart skills={frontEndSkills}  colors={frontEndColor} animationDuration={1000}/></Col>
+      <Col xs={12} md={4}> <span id="strengthTab">Back End</span><SkillChart skills={backEndSkills}  colors={{}} animationDuration={1000}/></Col>
+      <Col xs={12} md={4}><span id="strengthTab">Programming Languages</span><SkillChart skills={programmingLanguageSkills}  colors={programmingLanguageColor} animationDuration={1000} /></Col>
       </Row>
       </Container>
 

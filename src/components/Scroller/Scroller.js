@@ -23,7 +23,7 @@ class Scroller extends React.Component {
       offset={0}
       duration={500}>
   <a href="aboutPage" onClick={this.handleClick} style={{color:"white"}}id="scrollButton">
-  <span></span><span></span><span></span>UNLOCK</a>
+  <span></span><span></span><span></span></a>
   </Link>
 </div>
   );

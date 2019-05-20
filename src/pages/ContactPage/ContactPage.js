@@ -101,6 +101,7 @@ emailjs.send('tonyhu-gmail', 'LearnTony-Email', template_params,'user_ETC2Q0Eo7Q
 this.setState({
   submitSuccess:true
 });
+this.restoreForm();
 }
 
 createContactText(){
@@ -119,11 +120,6 @@ createContactText(){
 
 restoreForm(){
 this.setState( {
-      errorHints:{
-        errorHint1:"",
-        errorHint2:"",
-        errorHint3:""
-      },
       formControls: {
           email: {
             value: ''
@@ -175,6 +171,7 @@ submitHandler = event =>{
         type="name"
         name="name"
         id="name"
+        value={this.state.formControls.name.value}
         className="ContactFormInput"
         placeholder="Name"
         style={{"backgroundColor":"rgb(29,35,43)",color:"white"}} onChange={this.changeHandler}
@@ -188,6 +185,7 @@ submitHandler = event =>{
         type="email"
         name="email"
         id="email"
+        value={this.state.formControls.email.value}
         className="ContactFormInput"
         style={{"backgroundColor":"rgb(29,35,43)",color:"white"}}
         placeholder="Enter Email" onChange={this.changeHandler}
@@ -200,6 +198,7 @@ submitHandler = event =>{
       <Input
       type="textarea" name="message"  className="ContactFormInput" placeholder="Your Message" style={{"backgroundColor":"rgb(29,35,43)",height:180,color:"white"}}
       onChange={this.changeHandler}
+      value={this.state.formControls.message.value}
       />
     </FormGroup>
   </Col>

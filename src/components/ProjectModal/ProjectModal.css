@@ -39,7 +39,6 @@
 
 #learn-more-button{
   font-family: "Montserrat",sans-serif;
-  font-size:1rem;
 }
 
 
@@ -47,4 +46,23 @@
     font-family:'Montserrat', sans-serif;
     font-weight: bold;
     font-size:1.8rem;
+}
+
+
+@media (max-width:600px) {
+  #learn-more-button {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width:800px) {
+  #learn-more-button {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width:1000px) {
+  #learn-more-button  {
+    /* Never get larger than this */
+    font-size: 1rem;
+  }
 }

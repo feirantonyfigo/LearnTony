@@ -25,11 +25,13 @@ class ExperienceTimeLine extends React.Component {
     return (
       <div id={'Experience'}>
       <span>
+              <span id="ReactLifeTimeline">
                 <ReactLifeTimeline
                 subject_name='Tony Hu'
                 birthday={new Date('1997-03-20')}
                 get_events={this.generate_events.bind(this)}
                 />
+                </span>
                 <div id={'indicators'}>
                         {this.EVENTS.map(e =>
                                 <div key={e.color}>

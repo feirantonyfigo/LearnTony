@@ -6,6 +6,7 @@ import contactPageParticleConfig from '../../assets/json/contact-particlesjs-con
 import Particle from '../../components/Particle/Particle'
 import * as emailjs from 'emailjs-com'
 
+
 class ContactPage extends React.Component {
   constructor(props){
     super(props);

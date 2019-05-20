@@ -2,7 +2,7 @@ import React from 'react';
 import './PortfolioItem.css';
 import { Button } from 'reactstrap';
 import ProjectModal from '../../components/ProjectModal/ProjectModal'
-
+import Slide from 'react-reveal/Slide';
 class PortfolioItem extends React.Component {
   constructor(props){
     super(props);
@@ -33,9 +33,13 @@ return (<img src={srcPath} alt='PortfolioItem'/>);
     return (
       <div id="PortfolioItem-mask">
       <div id="text-mask">
+      <Slide top>
       <h4 id="project-name">{this.Portofolio.name}</h4>
       <p id="project-description">{this.Portofolio.description}</p>
+      </Slide>
+      <Slide bottom>
        <ProjectModal  projectDetails={this.Portofolio}  updateHover={this.handleMouseHoverOut}/>
+       </Slide>
       </div>
       <div id="outer-mask">
       <img src={require("../../assets/image/mask.png")}/>

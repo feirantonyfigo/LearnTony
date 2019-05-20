@@ -1,7 +1,7 @@
 import React from 'react';
 import "./NavBar.css"
 import {Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-
+import { Link, animateScroll as scroll } from "react-scroll";
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -28,16 +28,56 @@ class NavBar extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="#AboutPage">About</NavLink>
+                  <NavLink><Link
+                                  activeClass=""
+                                  to="AboutPage"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                                  >
+                                About
+                              </Link>
+                    </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#ExperiencePage">Experience</NavLink>
+                <NavLink><Link
+                                activeClass=""
+                                to="ExperiencePage"
+                                spy={true}
+                                smooth={true}
+                                offset={-50}
+                                duration={500}
+                                >
+                              Experience
+                            </Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#PortfolioPage">Portfolio</NavLink>
+                <NavLink><Link
+                                activeClass=""
+                                to="PortfolioPage"
+                                spy={true}
+                                smooth={true}
+                                offset={-50}
+                                duration={500}
+                                >
+                              Portfolio
+                            </Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#ContactPage">Contact</NavLink>
+                <NavLink><Link
+                                activeClass=""
+                                to="ContactPage"
+                                spy={true}
+                                smooth={true}
+                                offset={-50}
+                                duration={500}
+                                >
+                              Contact
+                            </Link>
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

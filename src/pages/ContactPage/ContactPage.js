@@ -29,7 +29,7 @@ class ContactPage extends React.Component {
       },
       submitSuccess:false
     };
-    console.log(this.state.submitSuccess)
+    //console.log(this.state.submitSuccess)
     this.createContactText  = this.createContactText.bind(this);
   }
 
@@ -58,20 +58,25 @@ validateInputs(){
     "* This field cannot be empty",
     "* Invalid Email"
   ]
+  var valid = true;
 var errorHint1="",errorHint2="",errorHint3 = "";
   //console.log(this.state.formControls.email.value);
   if(!Boolean(this.state.formControls.name.value)){
       errorHint1 = errorTemplate[0];
+      valid = false;
   }
   if(!Boolean(this.state.formControls.email.value)){
       errorHint2 = errorTemplate[0];
+      valid = false;
   }else{
     if(!this.validateEmail(this.state.formControls.email.value)){
       errorHint2 = errorTemplate[1]
+      valid = false;
     }
   }
   if(!Boolean(this.state.formControls.message.value)){
       errorHint3 = errorTemplate[0];
+      valid = false;
   }
   //console.log(errorHint1);
   //set state
@@ -82,6 +87,7 @@ var errorHint1="",errorHint2="",errorHint3 = "";
       ["errorHint2"]:errorHint2,
       ["errorHint3"]:errorHint3
     }  });
+    return valid;
 }
 
 sendEmail(){
@@ -105,7 +111,7 @@ this.restoreForm();
 }
 
 createContactText(){
-  console.log(this.state.submitSuccess);
+  //console.log(this.state.submitSuccess);
   if (this.state.submitSuccess){
     return (
       <div><h5 id="emailDelivered">I have recieved your email, cheers!</h5></div>
@@ -136,10 +142,10 @@ this.setState( {
 
 submitHandler = event =>{
   event.preventDefault();
-  this.validateInputs();
+  if(this.validateInputs()){
   this.sendEmail();
   this.restoreForm();
-
+}
 }
 
 

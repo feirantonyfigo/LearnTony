@@ -5,6 +5,9 @@ import './LandingPage.css'
 import Scroller from '../../components/Scroller/Scroller'
 
 class LandingPage extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <div className="LandingPage">

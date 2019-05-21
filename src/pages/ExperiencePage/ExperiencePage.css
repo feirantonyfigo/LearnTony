@@ -1,7 +1,8 @@
 #ExperiencePage{
   text-align: center;
   min-height:100vh;
-  background-color: rgb(245,245,245);
+  background-color: rgb(19,19,37);
+  color:white;
 }
 
 #ExperienceTitle{

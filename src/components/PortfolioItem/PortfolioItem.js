@@ -9,25 +9,41 @@ class PortfolioItem extends React.Component {
     this.Portofolio = this.props.value;
     this.handleMouseHoverIn = this.handleMouseHoverIn.bind(this);
     this.handleMouseHoverOut= this.handleMouseHoverOut.bind(this);
-    this.state = {isHovering: false};
+    this.updateModal = this.updateModal.bind(this);
+    this.state = {isHovering: false, modalOut:false};
+    this.updateHover = this.updateHover.bind(this);
   }
   handleMouseHoverIn() {
   this.setState({isHovering:true});
   //console.log(this.state);
   }
   handleMouseHoverOut() {
-  this.setState({isHovering:false});
+    if(!this.state.modalOut){
+          this.setState({isHovering:false});
+    }
+
   //console.log(this.state);
   }
   generate_image(srcPath){
 return (<img src={srcPath} alt='PortfolioItem'/>);
   }
+
+
   generate_mask(){
     if (this.state.isHovering){
       //console.log(this.state.isHovering);
       return this.create_mask_block();
     }
   }
+
+updateModal(modalStatus){
+  this.setState({modalOut: modalStatus});
+}
+
+updateHover(){
+  this.setState({isHovering:false});
+}
+
   create_mask_block(){
     //<Button color="info" id="learn-more-button">Learn More</Button>{' '}
     return (
@@ -38,7 +54,7 @@ return (<img src={srcPath} alt='PortfolioItem'/>);
       <p id="project-description">{this.Portofolio.description}</p>
       </Slide>
       <Slide bottom>
-       <ProjectModal  projectDetails={this.Portofolio}  updateHover={this.handleMouseHoverOut}/>
+       <ProjectModal  projectDetails={this.Portofolio}  updateHover={this.updateHover} updateModal={this.updateModal}/>
        </Slide>
       </div>
       <div id="outer-mask">

@@ -21,9 +21,11 @@ class Scroller extends React.Component {
       spy={true}
       smooth={true}
       offset={0}
-      duration={500}>
-  <a href="aboutPage" onClick={this.handleClick} style={{color:"white"}}id="scrollButton">
-  <span></span><span></span><span></span></a>
+      duration={500}
+      onClick={this.handleClick}
+      style={{color:"white"}}
+      id="scrollButton">
+  <span></span><span></span><span></span>
   </Link>
 </div>
   );

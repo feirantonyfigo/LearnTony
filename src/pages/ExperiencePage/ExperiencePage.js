@@ -8,7 +8,7 @@ class ExperiencePage extends React.Component {
   <div id="ExperiencePage">
   <Container>
   <Row id="ExperienceTitle">
-  <Col><h1 id="experienceText" className="floating textRotate"><span>E</span><span>X</span><span>P</span><span>E</span><span>R</span>
+  <Col><h1 id="experienceText" className="PageHeader"><span>E</span><span>X</span><span>P</span><span>E</span><span>R</span>
   <span>I</span><span>E</span><span>N</span><span>C</span><span>E</span></h1></Col>
   </Row>
   <Row>

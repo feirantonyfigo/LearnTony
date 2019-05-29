@@ -8,11 +8,13 @@ import {
 } from 'reactstrap';
 import './ProjectCarousel.css'
 
+
+
 class ProjectCarousel extends Component {
   constructor(props) {
     super(props);
     this.items = this.props.items;
-    console.log(this.props);
+    //console.log(this.props);
     this.state = { activeIndex: 0 };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);

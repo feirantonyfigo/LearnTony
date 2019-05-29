@@ -1,9 +1,95 @@
 .navBar{
-  opacity:0.5;
+  opacity:1;
+  position: relative;
   font-family: "Roboto",sans-serif;
-  transition: opacity 0.5s ease-in-out;
+}
+
+
+.navBar-closed{
+  font-family: "Roboto",sans-serif;
+  height: auto;
+  max-height: 0px;
+  padding-bottom: 8px;
+  transition: max-height  0.5s ;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.container{
+  opacity:1;
+}
+.navBar-closed .container{
+  opacity: 0;
+  transition: opacity 0.2s ;
+  background-color: transparent;
+}
+
+.navBar-open{
+  font-family: "Roboto",sans-serif;
+  max-height: 300px;
+  padding-bottom: 8px;
+  transition: max-height 1s ease-in-out;
+  opacity:0.5;
+  -webkit-transform:translate3d(0,0,0);
 }
 
 .navBar:hover{
   opacity:1;
+}
+
+
+/* NAVIGATION */
+nav {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* By Dominik Biedebach @domobch */
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+/* By Dominik Biedebach @domobch */
+
+
+/* stroke */
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 2.5px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
 }

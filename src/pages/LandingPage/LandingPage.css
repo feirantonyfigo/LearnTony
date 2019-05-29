@@ -5,7 +5,7 @@
   margin: 0;
   padding:0;
   min-height:100vh;
-  background-color: rgb(37, 41, 52);
+  background-color: rgb(30,32,35);
   position: relative;
 }
 
@@ -32,5 +32,5 @@
 }
 
 #GreetingName{
-  color: rgb(224,34,110);
+  color: rgb(49,148,201);
 }

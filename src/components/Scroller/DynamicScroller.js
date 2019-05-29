@@ -33,7 +33,7 @@ class DynamicScroller extends React.Component {
     var scrollerControl = this.getScrollerControl();
     var color = scrollerControl.color;
     var nextPage = scrollerControl.nextPage;
-    console.log("color is",color);
+    //console.log("color is",color);
     return (<Link
     activeClass=""
     to={nextPage}

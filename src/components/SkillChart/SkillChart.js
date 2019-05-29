@@ -6,13 +6,18 @@ class SkillChart extends React.Component{
     super(props);
     this.state = {
       skills: this.props.skills,
-      colors:this.props.colors,
       animationDuration:this.props.animationDuration
     }
   }
   render() {
     return (
-      <SkillBar skills={this.state.skills}  colors={this.state.colors} animationDuration={this.state.animationDuration}/>
+      <SkillBar skills={this.state.skills}  colors={{
+        "bar": "#3498db",
+        "title": {
+          "text": "#fff",
+          "background": "#2980b9"
+        }
+      }} animationDuration={this.state.animationDuration}/>
     );
   }
 }

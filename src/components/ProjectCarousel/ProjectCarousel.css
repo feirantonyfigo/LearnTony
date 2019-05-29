@@ -3,6 +3,7 @@
 }
 
 .controlArrow {
-  background-color: black;
-  height:10%;
+  background-color: rgb(54,50,55);
+  opacity:0.3;
+  width:2%;
 }

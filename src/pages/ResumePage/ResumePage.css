@@ -1,0 +1,15 @@
+.ResumePage {
+  text-align: center;
+  position: relative;
+}
+
+#resume{
+  max-width: 100%;
+  margin-top:5%;
+}
+
+
+.resumeDesktop{
+  padding-left:5%;
+  padding-right:5%;
+}

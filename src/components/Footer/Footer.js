@@ -8,17 +8,17 @@ import './Footer.css'
 class Footer extends React.Component {
   constructor(props){
     super(props);
-    this.state = { width:window.innerWidth, height: window.innerHeight, iconsize: "" };
+    this.state = { width:window.innerWidth, height: window.innerHeight, iconsize: "2x" };
     this.updateWindowDimensions();
   }
   componentDidMount() {
   this.updateWindowDimensions();
   window.addEventListener("resize", this.updateWindowDimensions);
-  console.log(this.state.width);
+  //console.log(this.state.width);
 }
 componentWillUnmount() {
   window.removeEventListener("resize", this.updateWindowDimensions);
-  console.log(this.state.width);
+  //console.log(this.state.width);
 }
 updateWindowDimensions = () => {
   this.setState({ width: window.innerWidth, height: window.innerHeight });

@@ -160,7 +160,7 @@ submitHandler = event =>{
       <div id="triangleParent"><div id="triangle"></div></div>
       <Container>
       <Row id="ContactTitle">
-      <Col><h1 id="contactText" className="floating textRotate"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span>
+      <Col><h1 id="contactText" className="PageHeader"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span>
       <span>C</span><span>T</span></h1></Col>
       </Row>
       <Row>

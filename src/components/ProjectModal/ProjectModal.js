@@ -20,16 +20,16 @@ class ProjectModal extends React.Component {
     this.setState(prevState => ({
       modal: !prevState.modal
     }));
-
+    this.props.updateModal(!this.state.modal);
   }
 closeAndClear(){
   this.setState(prevState => ({
     modal: !prevState.modal
   }));
   this.props.updateHover();
+  this.props.updateModal(!this.state.modal);
 }
 createViewSite(){
-console.log(this.projectDetails.site);
 if(this.projectDetails.site){
   return (<Button color="primary" onClick={this.toggle}  href={this.projectDetails.site}>View Site</Button>);
 }
@@ -39,10 +39,11 @@ if(this.projectDetails.site){
       <div>
       <Button color="info" id="learn-more-button"  onClick={this.toggle}>Learn More</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <ModalHeader toggle={this.toggle} id="ModalHeader">{this.projectDetails.name}</ModalHeader>
           <ModalBody>
           <div id="projectDetailImage">
-          <ProjectCarousel items={this.projectDetails.carousel}/></div>
-          <ModalHeader toggle={this.toggle} id="ModalHeader">{this.projectDetails.name}</ModalHeader>
+          <ProjectCarousel items={this.projectDetails.carousel}/>
+          </div>
           <div id="projectDetailDescription"></div>
           <p>
           {this.projectDetails.detailDescription}

@@ -23,7 +23,6 @@ class AppAssembler extends React.Component {
     this.state={
       width:window.innerWidth,
       height: window.innerHeight,
-      scrollHeight: window.pageYOffset,
       scrollerControl:{
         color:"black",
         visibility:false,
@@ -39,13 +38,12 @@ class AppAssembler extends React.Component {
     this.getScrollerControl = this.getScrollerControl.bind(this);
     this.ExperiencePageNavigationTracker = this.ExperiencePageNavigationTracker.bind(this);
     this.PortfolioPageNavigationTracker = this.PortfolioPageNavigationTracker.bind(this);
-    this.renderTrueNavBar = this.renderTrueNavBar.bind(this);
+    this.renderNavBar = this.renderNavBar.bind(this);
   }
 
   componentDidMount() {
   this.updateWindowDimensions();
   window.addEventListener("resize", this.updateWindowDimensions);
-    window.addEventListener("scroll", this.updateWindowScrollLocation);
   }
   componentWillUnmount() {
   window.removeEventListener("resize", this.updateWindowDimensions);
@@ -53,10 +51,6 @@ class AppAssembler extends React.Component {
   updateWindowDimensions = () => {
   this.setState({ width: window.innerWidth, height: window.innerHeight });
   };
-
-  updateWindowScrollLocation=()=>{
-    this.setState({scrollHeight:window.pageYOffset});
-  }
 
   LandingPageTracker(isVisible){
       this.setState({
@@ -220,27 +214,47 @@ createDynamicPercentAbout(){
   return 0;
   }
 }
-
-renderTrueNavBar(){
-  let vhPercent = this.state.scrollHeight / this.state.height;
-  console.log(vhPercent);
-  if(vhPercent>=1.08){
-    return   (<Slide top><NavBar stickyProp="top" /></Slide>);
+renderNavBar(){
+  if (this.state.navBarVisibility){
+    return (
+      <Slide top><div className="NavBar" id="NavBar"><NavBar /></div> </Slide>
+    );
   }
 }
 
   render(){
     return (
       <div className="AppAssembler">
-      <div className="LandingPage" id="LandingPage"><LandingPage /></div>
-      <NavBar stickyProp="top" />
+      <div className="LandingPage" id="LandingPage">
+      <VisibilitySensor onChange={this.LandingPageTracker}>
+      <LandingPage />
+      </VisibilitySensor>
+      </div>
+      <div><Slide top><div className="NavBar" id="NavBar"><NavBar /></div> </Slide></div>
       <div className="otherPages">
-      <div className="AboutPage" id="AboutPage">  <AboutPage /> </div>
-      <div className="ExperiencePage" id="ExperiencePage"><ExperiencePage/></div>
-      <div className="PortfolioPage" id="PortfolioPage"><PortfolioPage/></div>
-      <div className="ContactPage" id="ContactPage"><ContactPage/></div>
+      <div className="AboutPage" id="AboutPage">
+      <OnVisible percent={this.createDynamicPercentAbout()} bounce={true} onChange={this.AboutPageNavigationTracker}>
+      <AboutPage />
+      </OnVisible></div>
+      <div className="ExperiencePage" id="ExperiencePage">
+      <OnVisible percent={this.createDynamicPercentExperience()} bounce={true} onChange={this.ExperiencePageNavigationTracker}>
+      <OnVisible  bounce={true} onChange={this.ExperiencePageTracker}>
+      <ExperiencePage/>
+      </OnVisible>
+      </OnVisible>
+      </div>
+      <div className="PortfolioPage" id="PortfolioPage">
+      <OnVisible percent={95} bounce={true} onChange={this.PortfolioPageNavigationTracker}>
+      <OnVisible  bounce={true} onChange={this.PortfolioPageTracker}>
+      <PortfolioPage/>
+      </OnVisible>
+      </OnVisible>
+      </div>
+      <div className="ContactPage" id="ContactPage">  <OnVisible  bounce={true} onChange={this.ContactPageTracker}><ContactPage/>
+      </OnVisible></div>
       <div className="Footer" id="Footer"><Footer /></div>
       </div>
+      <div className="DynamicScroller" id="DynamicScroller" >{this.createDynamicScroller()}</div>
       </div>
     );
   }

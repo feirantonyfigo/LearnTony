@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/LearnTony/static/css/main.c348ca5f.chunk.css",
+    "main.js": "/LearnTony/static/js/main.63da7b13.chunk.js",
+    "main.js.map": "/LearnTony/static/js/main.63da7b13.chunk.js.map",
+    "runtime~main.js": "/LearnTony/static/js/runtime~main.ad2144b6.js",
+    "runtime~main.js.map": "/LearnTony/static/js/runtime~main.ad2144b6.js.map",
+    "static/css/2.266e55a5.chunk.css": "/LearnTony/static/css/2.266e55a5.chunk.css",
+    "static/js/2.a2b4b844.chunk.js": "/LearnTony/static/js/2.a2b4b844.chunk.js",
+    "static/js/2.a2b4b844.chunk.js.map": "/LearnTony/static/js/2.a2b4b844.chunk.js.map",
+    "index.html": "/LearnTony/index.html",
+    "precache-manifest.9a83de0007313c04191cac5e3009a53e.js": "/LearnTony/precache-manifest.9a83de0007313c04191cac5e3009a53e.js",
+    "service-worker.js": "/LearnTony/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/LearnTony/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.c348ca5f.chunk.css.map": "/LearnTony/static/css/main.c348ca5f.chunk.css.map",
+    "static/media/Resume.png": "/LearnTony/static/media/Resume.b42f3d9d.png",
+    "static/media/mask.png": "/LearnTony/static/media/mask.d3accfc8.png",
+    "static/media/selfie.png": "/LearnTony/static/media/selfie.87f12e96.png"
+  }
+}

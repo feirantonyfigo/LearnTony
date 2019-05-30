@@ -14,7 +14,7 @@ const backEndSkills = [
   {type: "Sybase", level: 70},
   {type:"MySQL",level:70},
   {type:"PostgreSQL", level:75},
-  {type:"MangoDB",level:75},
+  {type:"MongoDB",level:75},
   {type:"Migration",level:70},
   {type:"Optimization",level:70}
 ];

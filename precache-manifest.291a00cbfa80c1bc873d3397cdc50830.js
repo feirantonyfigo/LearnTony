@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "635ff0806023fcacd2874c8558a546a9",
+    "revision": "b057d16fac549b0a014be0a78cd7409a",
     "url": "/LearnTony/index.html"
   },
   {
-    "revision": "f3ada3fc67fe4b893b60",
+    "revision": "c316d2cc67450d5a092c",
     "url": "/LearnTony/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "31515c9f9bde737f3125",
-    "url": "/LearnTony/static/css/main.60180b12.chunk.css"
+    "revision": "a847cdb43891066ab0ce",
+    "url": "/LearnTony/static/css/main.47f4ccc5.chunk.css"
   },
   {
-    "revision": "f3ada3fc67fe4b893b60",
-    "url": "/LearnTony/static/js/2.a2b4b844.chunk.js"
+    "revision": "c316d2cc67450d5a092c",
+    "url": "/LearnTony/static/js/2.9f809b2a.chunk.js"
   },
   {
-    "revision": "31515c9f9bde737f3125",
-    "url": "/LearnTony/static/js/main.7d7a1ab5.chunk.js"
+    "revision": "a847cdb43891066ab0ce",
+    "url": "/LearnTony/static/js/main.abd4f61b.chunk.js"
   },
   {
     "revision": "6d5952cf56515bc6fbed",

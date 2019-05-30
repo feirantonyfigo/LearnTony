@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a223c4b95f96170f95eb53f5d254c24f",
+    "revision": "ee27daee8f790e84bbdbecdda9910d28",
     "url": "/LearnTony/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LearnTony/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "848e090bacc05c0aee89",
-    "url": "/LearnTony/static/css/main.6337b0db.chunk.css"
+    "revision": "4aa388c33a3dbc1ecd93",
+    "url": "/LearnTony/static/css/main.be72c467.chunk.css"
   },
   {
     "revision": "f3ada3fc67fe4b893b60",
     "url": "/LearnTony/static/js/2.a2b4b844.chunk.js"
   },
   {
-    "revision": "848e090bacc05c0aee89",
-    "url": "/LearnTony/static/js/main.63da7b13.chunk.js"
+    "revision": "4aa388c33a3dbc1ecd93",
+    "url": "/LearnTony/static/js/main.d5315173.chunk.js"
   },
   {
     "revision": "6d5952cf56515bc6fbed",

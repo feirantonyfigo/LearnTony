@@ -51,12 +51,12 @@
 
 @media (max-width:600px) {
   #learn-more-button {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width:800px) {
   #learn-more-button {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 

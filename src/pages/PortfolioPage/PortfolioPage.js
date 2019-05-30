@@ -126,7 +126,7 @@ class PortfolioPage extends React.Component {
   <Row id="PortfolioItemsRow">
   {
     this.PORTFOLIOS.map(e=>{
-      return <Col xs={6} md={4}><PortfolioItem value={e}/></Col>
+      return <Col xs={12} md={4}><PortfolioItem value={e}/></Col>
     })
   }
   </Row>

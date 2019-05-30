@@ -41,18 +41,24 @@ opacity: 0.9;
 
 @media (max-width:600px) {
   #project-name {
-    font-size: 0.7rem;
-  }
-  #project-description{
-    font-size:0.4rem;
-  }
-}
-@media (max-width:800px) {
-  #project-name {
     font-size: 1rem;
   }
   #project-description{
     font-size:0.7rem;
+  }
+  #learn-more-button{
+    font-size:0.7rem;
+  }
+}
+@media (max-width:800px) {
+  #project-name {
+    font-size: 1.5rem;
+  }
+  #project-description{
+    font-size:1rem;
+  }
+  #learn-more-button{
+    font-size:1.5rem;
   }
 }
 
@@ -62,6 +68,9 @@ opacity: 0.9;
     font-size: 1.3rem;
   }
   #project-description{
+    font-size:1rem;
+  }
+  #learn-more-button{
     font-size:1rem;
   }
 }
@@ -75,5 +84,4 @@ opacity: 0.9;
 
 #learn-more-button{
   font-family: "Montserrat",sans-serif;
-  font-size:1rem;
 }

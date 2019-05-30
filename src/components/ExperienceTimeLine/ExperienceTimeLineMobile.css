@@ -1,0 +1,18 @@
+#eventTitle{
+  font-family: 'Roboto',sans-serif;
+  font-size:1rem;
+}
+
+#eventDate{
+font-family: 'Montserrat', sans-serif;
+font-size:0.9rem;
+}
+
+#eventDescription{
+  font-family:'Roboto',sans-serif;
+  font-size:0.7rem;
+}
+
+#mobileTimeLineContainer{
+  padding-bottom: 10%;
+}

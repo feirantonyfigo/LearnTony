@@ -11,7 +11,8 @@ const experience = [
     {counter:4,date:'2017-05-01',title:"HBT Games",description:"Developed IOS Game Tri-Tri with Team"},
     {counter:5,date:'2017-09-06',title:"Third Year at University of Toronto",
     description:"Operating System, Web, Python, Database"},
-    {counter:6,date:'2018-05-07',title:"One Year Internship at RBC Capital Markets IT",description:"Developer Intern"}
+    {counter:6,date:'2018-05-07',title:"One Year Internship at RBC Capital Markets IT",description:"Developer Intern"},
+    {counter:7,date:'2019-03-15',title:"President of UTCSSA",description:"President of the largest international Chinese students club at U of T"}
   ];
 
 

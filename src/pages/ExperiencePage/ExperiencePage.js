@@ -6,12 +6,12 @@ class ExperiencePage extends React.Component {
   render() {
     return (
   <div id="ExperiencePage">
-  <Container>
+  <Container >
   <Row id="ExperienceTitle">
   <Col><h1 id="experienceText" className="PageHeader"><span>E</span><span>X</span><span>P</span><span>E</span><span>R</span>
   <span>I</span><span>E</span><span>N</span><span>C</span><span>E</span></h1></Col>
   </Row>
-  <Row>
+  <Row id="ExperienceTimeLine">
   <Col><ExperienceTimeLine/></Col>
    </Row>
   </Container>
